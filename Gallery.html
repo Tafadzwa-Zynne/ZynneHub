@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - ZynneHub</title>
+  <link rel="stylesheet" href="CSS.html">
+  
+  <style>
+    /* ==========================================================================
+       Reset & Global Styles
+       ========================================================================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    /* ==========================================================================
+       Navigation
+       ========================================================================== */
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #e74c3c
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #e74c3c
+    }
+
+    /* ==========================================================================
+       Gallery Section
+       ========================================================================== */
+    .gallery-section {
+      padding: 3rem 1rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .gallery-section h2 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      color: #2c3e50;
+      font-size: 2.5rem;
+      position: relative;
+    }
+
+    .gallery-section h2::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background: #3498db;
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.8rem;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      background: white;
+      transition: all 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 4 / 3;          /* consistent shape – change to 1 / 1 for squares */
+      transition: transform 0.45s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.09);
+    }
+
+    /* Optional caption area */
+    .gallery-item figcaption {
+      padding: 1rem;
+      font-size: 0.95rem;
+      color: #555;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.92);
+    }
+
+    /* ==========================================================================
+       Responsive Adjustments
+       ========================================================================== */
+    @media (max-width: 768px) {
+      .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1.2rem;
+      }
+
+      .gallery-section h2 {
+        font-size: 2rem;
+      }
+
+      .nav-links {
+        gap: 1.2rem;
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .gallery-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery-container img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">ZynneHub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="skills.html">Skills</a></li>
+         <li><a href="projects.html" class="active">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Gallery Content -->
+  <main>
+    <section class="gallery-section">
+      <h2>My Gallery</h2>
+
+      <div class="gallery-container">
+        <figure class="gallery-item">
+          <img src="WhatsApp Image 2026-02-27 at 11.42.38 PM.jpeg" alt="Gallery photo 1 - vibrant landscape" loading="lazy">
+          <!-- Optional: <figcaption>Sunset over the hills</figcaption> -->
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="photo2.jpeg"alt="Gallery photo 2 - city skyline at night" loading="lazy">
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="photo3.jpeg" alt="Gallery photo 3 - abstract texture" loading="lazy">
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="photo4.jpeg" alt="Gallery photo 4 - nature close-up" loading="lazy">
+        </figure>
+
+        <!-- Add more images here as needed -->
+        <!-- 
+        <figure class="gallery-item">
+          <img src="images/photo5.jpg" alt="..." loading="lazy">
+        </figure>
+        -->
+      </div>
+    </section>
+  </main>
+  <footer>
+     <p><a href="https://github.com/Tafadzwa-Zynne">GitHub</a> • <a href="mailto:hello@zynne.dev">Email</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My first Website</title>
+    <link rel="stylesheet" href="CSS.html">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa 0%, #bbdefb 100%);
+            color: #1a1a1a;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(44, 62, 80, 0.92);
+            color: #ecf0f1;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        h1 {
+            margin: 0;
+            font-size: 3.2em;
+            color: #e74c3c;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: #0f0f0f;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #e74c3c;
+        }
+        .container {
+            max-width: 960px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.88);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            text-align: center;
+        }
+        img.profile {
+            width: 260px;
+            height: 340px;
+            border-radius: 50%;
+            border: 6px solid #3498db;
+            object-fit: scale-down;
+            margin: 20px 0 30px;
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+            transition: transform 0.4s;
+        }
+        img.profile:hover {
+            transform: scale(1.08);
+        }
+        p {
+            font-size: 1.25em;
+            line-height: 1.7;
+        }
+        .highlight {
+            color: #8e44ad;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation bar-same on every page-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+             <li><a href="projects.html" class="active">Projects</a></li>
+             <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>ZynneHub</h1>   
+    </header>
+    <main>
+        <section class="two-column-layout">
+            <div class="sidebar">
+                <img src="WhatsApp Image 2026-02-18 at 4.10.09 PM.jpeg" alt="Profile picture of Zynne" class="profile"> <!--Add or replace here-->
+
+            <h2>ABOUT ME</h2> 
+            <p>Hi!, My name is Zynne and im currently learning web development. This website is my very own first project - I'm excited to build something from scratch and make it look better step by step.</p>
+            <p>I school at BAC and i enjoy programming, music, exploring new places and playing video games with my friends online.</p>
+            <h3>Quick Info</h3>
+    <ul>
+      <li><strong>Role:</strong> Student</li>
+      <li><strong>Profession:</strong> Web Developer</li>
+      <li><strong>Also:</strong> Programmer</li>
+      <li><strong>Location:</strong> Gaborone, Botswana</li>
+      <li><strong>Interests:</strong> Tech, coding, building projects</li>
+    </ul>
+
+    <!-- You can add more later, e.g. skills, contact -->
+    <div class="sidebar-extra">
+      <h4>Skills Snapshot</h4>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+        <li>Git / GitHub</li>
+      </ul>
+  <div class="content-area">
+            </div>
+        </section>
+        <section>
+            <h5>My  Goals</h5>
+            <p>Right now my main goal is to finish this tutorial series and build a proper personal portfolio website. Later i want to:</p>
+            <ol>
+                <li>Learn CSS styling and make this site look really nice.</li>
+                <li>Try building a calculator</li>
+                <li>Maybe one day develop a video game or a website for a famous company</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>@ 2026 Zynne - My First Website</p>
+         <p><a href="https://github.com/Tafadzwa-Zynne">GitHub</a> • <a href="mailto:hello@zynne.dev">Email</a></p>
+    </footer>
+</body>
+</html>           

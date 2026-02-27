@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zynne's Personal Website</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eef7f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Header / Top bar */
+        header {
+            background: linear-gradient(to right, #1e3a52, #2c4a6a, #3a5a7a);
+            color: rgb(242, 246, 247);
+            padding: 30px 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .logo {
+            font-size: 3.4rem;
+            font-weight: bold;
+            color: #e74c3c;          /* strong orange */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+            margin-bottom: 8px;
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+        
+        /* Navigation - bullet list style like in contact page */
+        nav {
+            background-color: #9de4e9;
+            padding: 20px 40px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 30px;
+        }
+        
+        nav ul {
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+        
+        nav li {
+            margin: 10px 0;
+            font-size: 1.15rem;
+        }
+        
+        nav a {
+            color: #0a0a0a;
+            text-decoration: none;
+        }
+        
+        nav a:hover,
+        nav a.active {
+            color: #d44107;
+        }
+        
+        /* Main content */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 40px 60px;
+        }
+        
+        h1, h2 {
+            color: #2c4a6a;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 1.9rem;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.2em;
+        }
+        
+        ul.hobbies {
+            list-style-type: disc;
+            padding-left: 40px;
+            margin: 20px 0;
+        }
+        
+        ul.hobbies li {
+            font-size: 1.08rem;
+            margin: 10px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.95rem;
+            border-top: 1px solid #ddd;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ZynneHub</div>
+        <div class="tagline">My little corner on the web</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Welcome!</h1>
+        
+        <p>Hello my name is Zynne, and I am a first year computing student at university.</p>
+        
+        <p>I have recently dived into HTML5, and this is my first personal website — still very much a work in progress!</p>
+
+        <h2>My Hobbies</h2>
+        <ul class="hobbies">
+            <li>Reading science fiction novels</li>
+            <li>Playing video games</li>
+            <li>Coding and building small projects</li>
+            <li>Hiking in nature</li>
+            <li>Baking and making desserts</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>© 2026 Zynne — Made with curiosity & lots of trial and error</p>
+         <p><a href="https://github.com/Tafadzwa-Zynne">GitHub</a> • <a href="mailto:hello@zynne.dev">Email</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me - ZynneHub</title>
+        <link rel="stylesheet" href="CSS.html">
+        <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa 0%, #bbdefb 100%);
+            color: #1a1a1a;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(44, 62, 80, 0.92);
+            color: #ecf0f1;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #e74c3c;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: #0c0c0c;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: #e74c3c; }
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 35px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+        }
+        label {
+            display: block;
+            margin: 18px 0 8px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+            border: 2px solid #bdc3c7;
+            border-radius: 8px;
+            font-size: 1.05em;
+            transition: border-color 0.3s;
+        }
+        input:focus, textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            padding: 14px 35px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.15em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        .social {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .social p {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        .social a {
+            margin: 0 20px;
+            color: #2c3e50;
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .social a:hover {
+            color: #e74c3c;
+            transform: translateY(-3px);
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>ZynneHub</h1>
+            <p>Get in touch with me</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                 <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Contact Me</h2>
+                <P>Feel free to reach out if you would like to chat, ask questions, or just saying hi! </P>
+                <h3>My Details</h3>
+                <ul>
+                    <li><strong>Email:</strong> zynnemaposa@gmail.com</li>
+                    <li><strong>Location:</strong>Francistown,Botswana</li>
+                </ul>
+                <!--Optional: simple contact form (won't send email withpout extra setup)-->
+                <h3>Send A Message</h3>
+                <form action="#" method="post"> <!--Change action later if you add backened-->
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <Label for="email">Your Email:</Label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="6" required></textarea><br><br>
+                    <button type="submit">Send Message</button>
+                </form>
+                <p><em>Note: The form is just a placeholder for now - it doesn't send anything yet. We'll add real functionality later if needed!</em></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Zynne</p>
+            <p>Contact: zynnemaposa@gmail.com</p>
+             <p><a href="https://github.com/Tafadzwa-Zynne">GitHub</a> • <a href="mailto:hello@zynne.dev">Email</a></p>
+        </footer>
+    </body>
+</html>
